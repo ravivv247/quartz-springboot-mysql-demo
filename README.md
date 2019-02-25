@@ -167,7 +167,17 @@ CREATE TABLE QRTZ_LOCKS
 
 commit;
 
+---------------------
 
+Insert below job data into scheduler_job_info table.
+
+# This job will run every 5 minutes
+insert into scheduler_job_info (cron_expression,cron_job,job_class,job_group,job_name,repeat_time) 
+values ('0 0/5 * * * ?',true,'com.quartz.demo.jobs.SimpleJob','test','SimpleJob',1);
+
+# This job will run every 30 seconds
+insert into scheduler_job_info (cron_expression,cron_job,job_class,job_group,job_name,repeat_time) 
+values ('30 0 * * * ?',true,'com.quartz.demo.jobs.SampleCronJob','test','SampleCronJob',1);
 
 
 
