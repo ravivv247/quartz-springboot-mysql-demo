@@ -1,5 +1,5 @@
 # quartz-springboot-mysql-demo
-This repository gives you an idea of how to schedule you jobs using quartz scheduler in a spring boot based application.
+This repository gives you an idea of how to schedule your batch jobs using quartz scheduler in a spring boot based application.
 In this example we are using MySQL as backend database. 
 Quartz scheduler needs some kind of data storage (Either RAM or Persistent)  for it to run. 
 More details on  quartz scheduler can be found here. 
